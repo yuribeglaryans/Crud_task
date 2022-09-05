@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#root{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px;
+}
+/* #backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    pointer-events: none;
+    display: none;
+  }
+  #backdrop.visible {
+    display: block;
+    pointer-events: all;
+  }  */
+.addCard{
+    display: none;
+    margin-left: auto;
+}
+.addCard.visible{
+    display: flex;
+    flex-direction: column;
+}
+.addCard input{
+    height: 50px;
+}
+.addCard button{
+    height: 50px;
+}
+#addNewContact{
+    align-self: center;
+    width: 70px;
+    height: 50px;
+}
+#form{
+    display: none;
+}
+#form.visible{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    max-width: 800px;
+}
+#form input{
+    height: 50px;
+  
+}
+ #form button{
+    height: 50px;
+} 
+
+.cardsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+#label{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#label img{
+    width: 240px;
+    height: 240px;
+}
